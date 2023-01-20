@@ -4,11 +4,18 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0 1em;
+  /* font-family: Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: sans-serif;
+  background: linear-gradient(45deg, red, purple, blue);
+  min-height: 100vh;
+  color: white;
 }
 
 h1 {
   font-size: 2.5rem;
   text-align: center;
+  font-weight: bold;
+  color: white;
 }
 
 .form-designn {
@@ -24,8 +31,15 @@ h1 {
 
 #task-input {
   width: min(400px, 70vw);
+  padding: 0.25em;
   font-size: 1.1rem;
   text-align: center;
+  border-radius: 4em;
+  transition: all 300ms ease;
+}
+#task-input:focus {
+  transform: scale(1.1);
+  border: auto;
 }
 
 #btn {
@@ -34,7 +48,8 @@ h1 {
   cursor: pointer;
   color: white;
   transition: all 300ms ease;
-  background: linear-gradient(225deg, red, purple);
+  background: linear-gradient(45deg, purple, red);
+  border: 1px solid white;
   outline: none;
 }
 #btn:hover {
@@ -46,7 +61,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-top: 0.5em;
-  border: 1px solid black;
+  border: 1px solid rgb(207, 195, 195);
   padding: 0.25em 0.5em;
   min-width: 300px;
   text-align: center;
