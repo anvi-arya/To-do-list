@@ -3,26 +3,63 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 1em;
 }
 
 h1 {
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .form-designn {
   display: flex;
+  width: 100px;
+  margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2.5em;
+  padding: 0.5em;
 }
 
-#task {
-  width: 400px;
+#task-input {
+  width: min(400px, 70vw);
   font-size: 1.1rem;
-  padding-left: 13em;
+  text-align: center;
 }
 
 #btn {
   width: 100px;
+  border-radius: 2em;
+  cursor: pointer;
+  color: white;
+  transition: all 300ms ease;
+  background: linear-gradient(225deg, red, purple);
+  outline: none;
+}
+#btn:hover {
+  transform: scale(1.1);
+  outline: none;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  border: 1px solid black;
+  padding: 0.25em 0.5em;
+  min-width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 300ms ease;
+  border-radius: 4em;
+  box-shadow: 3px 3px 5px #0007;
+}
+
+.task-item:hover {
+  transform: translate(0.5em);
+}
+.completed {
+  text-decoration: line-through;
+  /* background-color: orange; */
 }
